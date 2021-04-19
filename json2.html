@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON 2</title>
+</head>
+
+<body>
+    <h1>JSON</h1>
+    <h1>Javascript Object Notation</h1>
+
+    <script>
+        // object
+        const user = { id: 155, name: "vondul" }; // {id:155, name:"vondul"}
+
+        // converting object into json
+        const userJson = JSON.stringify(user);  // {"id":155,"name":"vondul"}
+        console.log(userJson);
+
+        // converting json into object
+        const userFromJson = JSON.parse(userJson);
+        console.log(userFromJson);
+    </script>
+</body>
+
+</html>
